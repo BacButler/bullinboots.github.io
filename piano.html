@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="/css/piano.css">
+        <link rel="stylesheet" href="/css/metro.css">
+        <title>Piano</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <script src="/js/piano.js" defer></script>
+    </head>
+    <body>
+        <section>
+            <nav class="my-head">
+                <div class="container">
+                    <a href="instru.html">
+                        <h1>PIANO</h1>
+                    </a>
+                </div>
+            </nav>
+        </section>
+
+        <div class="container-metro">
+            <div class="metronome">
+                <div class="bpm-display">
+                    <span class="tempo">140</span>
+                    <span class="bpm">BPM</span>
+                </div>
+                <div class="tempo-text">Nice and steady</div>
+                <div class="tempo-settings">
+                    <div class="adjust-tempo-btn decrease-tempo">-</div>
+                    <input type="range" min="20" max="280" step="1" class="slider">
+                    <div class="adjust-tempo-btn increase-tempo">+</div>
+                </div>
+                <div class="start-stop">START</div>
+                <div class="measures">
+                    <div class="subtract-beats stepper">-</div>
+                    <div class="measure-count">4</div>
+                    <div class="add-beats stepper">+</div>
+                </div>
+                <span class="beats-per-measure-text">Beats per measure</span>
+            </div>
+        </div>
+
+        <div class="super">
+            <div class="piano">
+                <div data-note="C1" class="key white"></div>
+                <div data-note="C1#" class="key black"></div>
+                <div data-note="D1" class="key white"></div>
+                <div data-note="D1#" class="key black"></div>
+                <div data-note="E1" class="key white"></div>
+                <div data-note="F1" class="key white"></div>
+                <div data-note="F1#" class="key black"></div>
+                <div data-note="G1" class="key white"></div>
+                <div data-note="G1#" class="key black"></div>
+                <div data-note="A1" class="key white"></div>
+                <div data-note="A1#" class="key black"></div>
+                <div data-note="B1" class="key white"></div>
+                <div data-note="C2" class="key white"></div>
+                <div data-note="C2#" class="key black"></div>
+                <div data-note="D2" class="key white"></div>
+                <div data-note="D2#" class="key black"></div>
+                <div data-note="E2" class="key white"></div>
+                <div data-note="F2" class="key white"></div>
+                <div data-note="F2#" class="key black"></div>
+                <div data-note="G2" class="key white"></div>
+                <div data-note="G2#" class="key black"></div>
+                <div data-note="A2" class="key white"></div>
+                <div data-note="A2#" class="key black"></div>
+                <div data-note="B2" class="key white"></div>
+                <div data-note="C3" class="key white"></div>
+                <div data-note="C3#" class="key black"></div> 
+                <div data-note="D3" class="key white"></div> 
+                <div data-note="D3#" class="key black"></div> 
+                <div data-note="E3" class="key white"></div> 
+            </div>
+
+            <audio id="C1" src="/notes/c1.wav"></audio>
+            <audio id="C1#" src="/notes/c1sharp.wav"></audio>
+            <audio id="D1" src="/notes/d1.wav"></audio>
+            <audio id="D1#" src="/notes/d1sharp.wav"></audio>
+            <audio id="E1" src="/notes/e1.wav"></audio>
+            <audio id="F1" src="/notes/f1.wav"></audio>
+            <audio id="F1#" src="/notes/f1sharp.wav"></audio>
+            <audio id="G1" src="/notes/g1.wav"></audio>
+            <audio id="G1#" src="/notes/g1sharp.wav"></audio>
+            <audio id="A1" src="/notes/a1.wav"></audio>
+            <audio id="A1#" src="/notes/a1sharp.wav"></audio>
+            <audio id="B1" src="/notes/b1.wav"></audio>
+            <audio id="C2" src="/notes/c2.wav"></audio>
+            <audio id="C2#" src="/notes/c2sharp.wav"></audio>
+            <audio id="D2" src="/notes/d2.wav"></audio>
+            <audio id="D2#" src="/notes/d2sharp.wav"></audio>
+            <audio id="E2" src="/notes/e2.wav"></audio>
+            <audio id="F2" src="/notes/f2.wav"></audio>
+            <audio id="F2#" src="/notes/f2sharp.wav"></audio>
+            <audio id="G2" src="/notes/g2.wav"></audio>
+            <audio id="G2#" src="/notes/g2sharp.wav"></audio>
+            <audio id="A2" src="/notes/a2.wav"></audio>
+            <audio id="A2#" src="/notes/a2sharp.wav"></audio>
+            <audio id="B2" src="/notes/b2.wav"></audio>
+            <audio id="C3" src="/notes/c3.wav"></audio>
+            <audio id="C3#" src="/notes/c3sharp.mp3"></audio> 
+            <audio id="D3" src="/notes/d3.mp3"></audio> 
+            <audio id="D3#" src="/notes/d3sharp.mp3"></audio> 
+            <audio id="E3" src="/notes/e3.mp3"></audio> 
+        </div>
+        
+        <footer class="footer">
+            <div class="container-ft">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4>Instruments</h4>
+                        <div class="instru-space col-instru">
+                            <ul>
+                                <li><a href="#">Piano</a></li>
+                                <li><a href="#">Drums</a></li> 
+                                <li><a href="#">Guitar</a></li>
+                                <li><a href="#">Saxophone</a></li>
+                                <li><a href="#">Violin</a></li>
+                                <li><a href="#">Voice</a></li>
+                            </ul>
+                            <ul id="mt" style="font-style: italic; font-size: 0.7rem; color: #999999;">
+                                <li id="pia">coming soon</li>
+                                <li id="dru">(coming soon)</li>
+                                <li id="gui">(coming soon)</li>
+                                <li id="sax">(coming soon)</li>
+                                <li id="vio">(coming soon)</li>
+                                <li id="voi">(coming soon)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-col">
+                        <h4>About Us</h4>
+                        <p class="text-space" style="color:#acacac;">The online instruments website made for online teaching of Sarasas Witaed Suksa School</p>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Created By</h4>
+                        <div class="name-space">
+                            <ul>
+                                <li><a href="#">Kittipat Srikittichai</a></li>
+                                <li><a href="#">Napat Jinsuksomboon</a></li>
+                                <li><a href="#">Panich Thawornpichayachai</a></li>
+                                <li><a href="#">Sirawich Kamplee</a></li>
+                                <li><a href="#">Tanaree Sorachetwarakorn</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Follow Us</h4>
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/musique.sws"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="/js/metro.js" type="module"></script>
+    </body>
+</html>
