@@ -1,10 +1,14 @@
+
+// กำหนดัวแปร ปุ่ม
 const WHITE_KEYS = ['q','w','e','r','t','y','u','i','o','p','z','x','c','v','b','n','m']
 const BLACK_KEYS = ['2','3','5','6','7','9','0','s','d','f','h','j']
 
+// เชื่อมโยงโค้ดไปยังไฟล์HTML
 const keys = document.querySelectorAll('.key')
 const whiteKeys = document.querySelectorAll('.key.white')
 const blackKeys = document.querySelectorAll('.key.black')
 
+// ใช้for loopในการใส่functionลงไปในแต่ละ
 keys.forEach(key => {
     key.addEventListener('click' , () => playNote(key))
 })
@@ -27,7 +31,5 @@ function playNote(key) {
     key.classList.add('active')
     setTimeout(() => {  key.classList.remove('active'); }, 500)
     console.log(setTimeout(() => {  key.classList.remove('active'); }, 500))
-    // noteAudio.addEventListener('ended', () => {
-    //     key.classList.remove('active')
-    // })
+
 }
